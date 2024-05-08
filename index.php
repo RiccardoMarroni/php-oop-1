@@ -1,12 +1,16 @@
 <?php 
     include __DIR__."/Views/header.php";
     include __DIR__."/Models/Movie.php";
+    $categories = Category::fetchCategories();
 
-    $movies = [
-        new Movie ('Harry Potter', 'en', 5, "immagine di copertina"),
-        new Movie ('Ironman', 'en', 5, "immagine di copertina"),
-        new Movie ('Thor', 'en', 5, "immagine di copertina")
-    ]
+    $cat = $categories[0];
+
+     $movies = //[
+    //     new Movie ('Harry Potter', 'en', 5, "immagine di copertina"),
+    //     new Movie ('Ironman', 'en', 5, "immagine di copertina"),
+    //     new Movie ('Thor', 'en', 5, "immagine di copertina")
+    // ]
+     Movie::fetchMovies();
 ?>
 <main class="container">
     <section>
